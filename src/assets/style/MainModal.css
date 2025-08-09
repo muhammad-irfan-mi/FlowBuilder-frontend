@@ -1,0 +1,137 @@
+.modal-main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 90%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: auto;
+}
+
+/* .modal-header {
+    position: relative;
+    display: flex;
+    background-color: #FBF6F0;
+    padding: 17px;
+}
+
+.modal-header h3 {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+} */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+}
+
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.remove-modal-item-icon {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.msg-type {
+    padding: 10px;
+}
+
+.hr {
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.modal-item {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.remove-modal-item-btn {
+    position: absolute;
+    top: 52%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+}
+
+.quick-reply-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.default-quick-reply-btn {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px dashed #666;
+    background: none;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.default-quick-reply-btn:hover {
+    border-color: #1E90FF;
+    color: #1E90FF;
+}
+
+.quick-reply-item {
+    margin: 4px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.remove-quick-reply-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.remove-quick-reply-btn:hover {
+    color: #ff4d4d;
+}
+
+.add-content {
+    margin: 15px 10px;
+}
+
+.add-content button {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background: none;
+    color: lightgray;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.add-content button:hover {
+    border-color: #1E90FF;
+    color: #1E90FF;
+}

@@ -1,0 +1,162 @@
+.dashboard {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dashboard-button {
+  background: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-button:hover {
+  background: #0056b3;
+}
+
+
+
+input[type=\"checkbox\"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+
+
+
+.add-flow-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-flow-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add-flow-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-flow-modal-header h3 {
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+.add-flow-modal-body input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-flow-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.add-flow-modal-footer button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-flow-modal-footer button:first-child {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.add-flow-modal-footer button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown-menu div {
+  padding: 8px 12px;
+  cursor: pointer;
+  }
+  
+.dropdown-menu div:hover {
+  background-color: #f0f0f0;
+} 

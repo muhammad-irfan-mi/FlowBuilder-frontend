@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.modal-header button {
+    margin-left: 10px;
+}
+
+
+select {
+    outline: none;
+    color: rgba(0, 0, 0, 0.822);
+    width: 100%;
+    padding: 6px 0px;
+    margin: 10px 0px;
+
+}
+
+.hr {
+    width: 83%;
+    height: 1px;
+    margin: 0px auto;
+    background-color: lightgray;
+}
+
+.msg-type {
+    color: grey;
+    padding: 20px 30px;
+}
+
+.msg-type p {
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 19px;
+}
+
+.add-content button {
+    color: rgba(128, 128, 128, 0.685);
+    font-size: 19px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 150px 15px 15px 15px;
+    border: 1px dashed lightblue;
+    padding: 20px 12px;
+    width: 91%;
+
+}
+
+.content-item-container:hover .remove-content-button {
+    display: block;
+}
+
+.content-item-container:hover {
+    background-color: #f1f1f1;
+}
+
+.remove-content-button:hover {
+    color: #ff0000;
+}
+
+
+.custom-node-btn {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.custom-node-btn-handler {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: 85px;
+    margin-top: 14px;
+}
+
+.custom-continue-text {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.custom-continue-handler {
+    border: 1px solid gray;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 152px;
+    right: 20px;
+}
+
+.node-input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/* .dynamic-continue-text {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+} */
+
+.dynamic-target-handler {
+    background: gray;
+    width: 10px;
+    visibility: hidden;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Node Style Code End */
+
+/* App NavBar Styling */
+.publish-flow {
+    border-radius: 4px;
+    background-color: blue;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.publish-flow:hover {
+    color: black;
+}
+
+/* Chat Modal Styling */
+.chat {
+    position: absolute;
+    color: blue;
+    right: 80px;
+    bottom: 170px;
+}
+
+.chat-section {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-btn {
+    position: relative;
+    top: 430px;
+    right: 10px;
+    z-index: 99;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.chat-icon {
+    font-size: 44px;
+}
+
+.chat-btn:hover {
+    transform: scale(1.1);
+}
+
+.chat-input {
+    position: absolute;
+    bottom: 10px;
+    /* left: 15px; */
+    right: 20px;
+    width: 70%;
+    border-radius: 25px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.chat-input input {
+    outline: none;
+    border: none;
+    padding: 9px;
+    border-radius: 15px;
+    width: 87%;
+}
+
+.chatrace-page {
+    width: 100%;
+    height: 74%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.chatrace-link {
+    display: grid;
+    justify-items: end;
+}
+
+.chatrace-link span {
+    display: block;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 25px;
+    text-align: end;
+    cursor: pointer;
+
+}
+
+.chatrace-pricing {
+    width: 80px;
+}
+
+.undo-redo {
+    margin: 0px 30px;
+}
+
+.undo-redo-icon {
+    color: rgba(0, 119, 255, 0.582);
+    font-size: 23px;
+    margin: 0px 5px;
+}
+
+.undo-redo-icon:hover {
+    color: rgba(87, 164, 252, 0.582);
+}
+
+
+/* Modal Item Remove Styling  */
+.remove-modal-item-btn {
+    display: none;
+}
+
+.modal-item:hover .remove-modal-item-btn {
+    display: block;
+}

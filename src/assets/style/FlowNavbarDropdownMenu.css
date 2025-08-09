@@ -1,0 +1,63 @@
+.flow-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.flow-menu-button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flow-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 270px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.flow-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.flow-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.flow-dropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+.flow-dropdown li.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.flow-dropdown .pro-badge {
+  margin-left: auto;
+  font-size: 11px;
+  color: #d00;
+  font-weight: bold;
+}
+
+.flow-dropdown li.delete {
+  color: #d00;
+}
+
+.flow-dropdown li.delete:hover {
+  background-color: #ffeaea;
+}

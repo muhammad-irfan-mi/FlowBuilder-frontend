@@ -1,0 +1,97 @@
+.qr-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: 1000;
+}
+
+.qr-modal {
+    background: rgba(255, 255, 255, 0.918);
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 24%;
+    top: 3%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.qr-modal-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.qr-label {
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+.qr-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 3px 0px 20px 0px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+
+}
+
+.qr-modal-body {
+    padding: 20px;
+}
+
+.qr-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.qr-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.qr-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    padding: 20px;
+}
+
+.qr-delete {
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qr-save {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
