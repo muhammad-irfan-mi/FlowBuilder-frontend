@@ -11,7 +11,7 @@ export const ContentProvider = ({ children }) => {
     if (!currentFlowId) return;
 
     try {
-      await axios.post(`http://localhost:5001/api/save-content/${currentFlowId}`, {
+      await axios.post(`${import.meta.env.VITE_BASE_URL}/api/save-content/${currentFlowId}`, {
         nodeId,
         content
       });

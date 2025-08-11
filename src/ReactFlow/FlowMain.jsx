@@ -58,7 +58,7 @@ const FlowMain = () => {
     if (!flowId) return [];
 
     try {
-      const response = await axios.get(`http://localhost:5001/api/nodes/${flowId}`);
+      const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/nodes/${flowId}`);
       return response.data;
     } catch (error) {
       console.error('Error loading nodes:', error);
@@ -70,7 +70,7 @@ const FlowMain = () => {
     if (!flowId) return;
 
     try {
-      await axios.post(`http://localhost:5001/api/nodes/${flowId}`, {
+      await axios.post(`${import.meta.env.VITE_BASE_URL}/api/nodes/${flowId}`, {
         nodeId: node.id,
         channel: node.data.channel || 'omnichannel',
         label: node.data.label,
@@ -84,7 +84,7 @@ const FlowMain = () => {
 
   const updateNodeInDB = async (nodeId, updates) => {
     try {
-      await axios.put(`http://localhost:5001/api/nodes/${nodeId}`, {
+      await axios.put(`${import.meta.env.VITE_BASE_URL}/api/nodes/${nodeId}`, {
         ...updates,
         flowId
       });
@@ -95,7 +95,7 @@ const FlowMain = () => {
 
   const deleteNodeFromDB = async (nodeId) => {
     try {
-      await axios.delete(`http://localhost:5001/api/nodes/${nodeId}`);
+      await axios.delete(`${import.meta.env.VITE_BASE_URL}/api/nodes/${nodeId}`);
     } catch (error) {
       console.error('Error deleting node:', error);
     }
@@ -105,7 +105,7 @@ const FlowMain = () => {
     try {
       if (flowId) {
         // Load flow data (nodes, edges, content)
-        const flowResponse = await axios.get(`http://localhost:5001/api/flow-data/${flowId}`);
+        const flowResponse = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/flow-data/${flowId}`);
         const { flowData } = flowResponse.data;
 
         // Load node-specific data (channels, isStart)
@@ -178,7 +178,7 @@ const FlowMain = () => {
     if (!flowId) return;
 
     try {
-      await axios.post(`http://localhost:5001/api/flow-data/${flowId}`, {
+      await axios.post(`${import.meta.env.VITE_BASE_URL}/api/flow-data/${flowId}`, {
         flowData: {
           nodes: nodesToSave,
           edges: edgesToSave,
@@ -312,7 +312,7 @@ const FlowMain = () => {
     });
 
     try {
-      const response = await axios.post(`http://localhost:5001/api/publish-flow/${flowId}`, {
+      const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/publish-flow/${flowId}`, {
         nodes,
         edges,
         nodeContents

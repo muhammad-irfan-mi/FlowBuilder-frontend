@@ -4,7 +4,9 @@ import "../assets/style/FlowsDashboard.css";
 import { useNavigate } from "react-router-dom";
 import { HiDotsHorizontal } from "react-icons/hi";
 
-const API_URL = "http://localhost:5001/api/flows";
+// const API_URL = `${pro}/api/flows`;
+
+const API_URL = `${import.meta.env.VITE_BASE_URL}/api/flows`;
 
 const FlowsDashboard = () => {
     const [flows, setFlows] = useState([]);

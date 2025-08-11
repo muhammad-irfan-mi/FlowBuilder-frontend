@@ -12,7 +12,7 @@ const FlowNavbarDropdownMenu = ({ flowId }) => {
 
   const handleDuplicate = async () => {
     try {
-      await axios.post(`http://localhost:5001/api/flows/duplicate/${flowId}`);
+      await axios.post(`${import.meta.env.VITE_BASE_URL}/api/flows/duplicate/${flowId}`);
       window.location.reload();
     } catch (error) {
       console.error("Error duplicating flow:", error);
